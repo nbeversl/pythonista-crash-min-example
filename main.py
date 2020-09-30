@@ -80,10 +80,12 @@ class MainView(ui.View):
 		self.tv.text_color = 'white'
 		self.tv.width = w
 		
-		# un-comment this line to cause a crash:
-		#self.full_txt_search_field = ui.TextField()
 
-		self.add_subview(self.full_txt_search_field)		
+		# un-comment these two lines to cause a crash:
+		#self.full_txt_search_field = ui.TextField()
+		# self.add_subview(self.full_txt_search_field)		
+
+
 		self.add_subview(self.tv)
 
 		self.tvo = ObjCInstance(self.tv)
